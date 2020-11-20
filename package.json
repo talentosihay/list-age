@@ -1,5 +1,5 @@
 {
-  "name": "contentful-json-table",
+  "name": "contentful-json-list-age",
   "version": "0.1.0",
   "devDependencies": {
     "@babel/core": "7.3.4",
@@ -7,7 +7,7 @@
     "@babel/plugin-transform-runtime": "7.3.4",
     "@babel/preset-env": "7.3.4",
     "@babel/preset-react": "7.0.0",
-    "@contentful/contentful-extension-scripts": "0.14.0",
+    "@contentful/contentful-extension-scripts": "^0.14.0",
     "@contentful/eslint-config-extension": "0.2.0",
     "@testing-library/react": "8.0.4",
     "@types/jest": "24.0.15",

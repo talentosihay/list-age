@@ -38,7 +38,7 @@ describe('App', () => {
 
     expect(sdk.field.getValue).toHaveBeenCalled();
     expect(sdk.field.onValueChanged).toHaveBeenCalled();
-    expect((getByTestId('json-table') as HTMLInputElement).value).toEqual('initial-value');
+    expect((getByTestId('my-field') as HTMLInputElement).value).toEqual('initial-value');
   });
 
   it('should call starstartAutoResizer', () => {
@@ -49,13 +49,13 @@ describe('App', () => {
   it('should call setValue on every change in input and removeValue when input gets empty', () => {
     const { getByTestId } = renderComponent(sdk);
 
-    fireEvent.change(getByTestId('json-table'), {
+    fireEvent.change(getByTestId('my-field'), {
       target: { value: 'new-value' }
     });
 
     expect(sdk.field.setValue).toHaveBeenCalledWith('new-value');
 
-    fireEvent.change(getByTestId('json-table'), {
+    fireEvent.change(getByTestId('my-field'), {
       target: { value: '' }
     });
 

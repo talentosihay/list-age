@@ -1,6 +1,6 @@
 {
-  "id": "json-table",
-  "name": "JSON Table",
+  "id": "json-list-age",
+  "name": "JSON List Age",
   "srcdoc": "./build/index.html",
   "fieldTypes": [
     "Object"
